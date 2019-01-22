@@ -31,8 +31,17 @@ public class Person2 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 2 put your implementation here
-		return  null;
+		Random rand = new Random();
+		String a = input;
+		char b;
+		int random = rand.nextInt(input.length() - 1) + 1;
+		for (int i = 0; i < input.length(); i++) {
+			b = input.charAt(random);
+			a += b;
+
+		}
+
+		return a;
 	}
 	/**
 	 * Return a string rep of this object
