@@ -1,0 +1,20 @@
+apply plugin: 'java'
+apply plugin:'base'
+
+//groupId = 'edu.gatech.oad.antlab'
+//version = '1.0'
+
+defaultTasks 'jar'
+
+dependencies {
+   compile files('lib/resources.jar')
+}
+
+jar {
+    manifest {
+        attributes(
+            'Main-Class': 'edu.gatech.oad.antlab.pkg1.AntLabMain',
+            'Class-Path': '../../lib/resources.jar'
+        )
+    }
+}
