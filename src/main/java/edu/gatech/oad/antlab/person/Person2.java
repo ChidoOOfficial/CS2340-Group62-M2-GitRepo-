@@ -33,6 +33,7 @@ public class Person2 {
 	private String calc(String input) {
 		Random rand = new Random();
 		String a = input;
+		String c = "a";
 		char b;
 		int random = rand.nextInt(input.length() - 1) + 1;
 		for (int i = 0; i < input.length(); i++) {
